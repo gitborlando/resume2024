@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 860px;
+	padding: 10px;
+	background-color: #e9ecef;
+	font-size: 16px;
+	font-family: youyuan;
+}
+
+@font-face {
+	font-family: youyuan;
+	src: url('./SanJiYuanTiJian-Zhong-2.ttf');
+}
+
+.block {
+	width: 100%;
+	height: fit-content;
+	background-color: white;
+	border-radius: 4px;
+	padding: 7px 20px 7px 20px;
+	margin-bottom: 10px;
+}
+
+.title {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.bin {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.w-50 {
+	width: 50%;
+}
+.w-60 {
+	width: 60px;
+}
+.flex {
+	display: flex;
+}
+.mb-10 {
+	margin-bottom: 6px;
+}
+.lh-22 {
+	line-height: 21px;
+}
+.lh-26 {
+	line-height: 24px;
+}
+.gray {
+	color: rgb(97, 95, 95);
+}
+.li {
+	display: flex;
+	height: fit-content;
+}
+.maker {
+	color: #00965e;
+	font-size: 1.4rem;
+	display: flex;
+	justify-content: start;
+	width: 16px;
+	flex-shrink: 0;
+	margin-top: -4px;
+}
+.maker2 {
+	color: yellowgreen;
+	font-size: 1.2rem;
+	margin-top: 0px;
+}
+.pl-20 {
+	padding-left: 20px;
+}
+a {
+	color: #00965e;
+}
+.green {
+	color: #00965e;
+}
+.f-16 {
+	font-size: 16px;
+}
+.wl {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}

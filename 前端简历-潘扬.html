@@ -1,0 +1,199 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="./resume.css" />
+	</head>
+	<body>
+		<div class="block">
+			<div class="title">基本信息</div>
+			<div class="bin">
+				<div class="w-50">
+					<div class="flex mb-10">
+						<div class="w-60 gray">姓名:</div>
+						<div>潘扬</div>
+					</div>
+
+					<div class="flex mb-10">
+						<div class="w-60 gray">电话:</div>
+						<div>136-9950-2706</div>
+					</div>
+				</div>
+				<div class="w-50">
+					<div class="flex mb-10">
+						<div class="w-60 gray">院校:</div>
+						<div>江西财经大学(金融学类)</div>
+					</div>
+
+					<div class="flex mb-10">
+						<div class="w-60 gray">邮箱:</div>
+						<div>2629888564@qq.com</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="title">项目经历</div>
+			<div class="mb-10">
+				<span class="green f-16">屎羊羊编辑器 (个人项目)</span>
+				<span style="width: 10px; display: inline-block"></span>2023.11 ~ 至今
+			</div>
+			<div class="mb-10 lh-26">
+				屎羊羊编辑器是一个类似 Figma(行业标杆) 的可视化编辑软件, 由本人独立制作,
+				可编辑矢量图形、图片、文字等. 本编辑器致力于高性能编辑, 以下是其与 Figma 部分性能对比:
+				<a target="_blank" href="https://v.douyin.com/iMj7hPya/">https://v.douyin.com/iMj7hPya/</a>
+			</div>
+			<div class="mb-10 lh-26">
+				在线体验地址:
+				<a target="_blank" href="https://gitborlando.github.io/editor/#test-file-2"
+					>https://gitborlando.github.io/...</a
+				>
+				<span style="width: 10px; display: inline-block"></span> Github 地址:
+				<a target="_blank" href="https://github.com/gitborlando/editor"
+					>https://github.com/gitborlando/editor</a
+				>
+			</div>
+			<p class="lip mb-10 lh-26">本编辑器技术栈为 React + Vite, 比较核心的技术栈均为自研, 例如:</p>
+			<p class="lip pl-20 maker2 lh-26 mb-10">
+				渲染引擎: 本编辑器的渲染库经过多次迭代, 初始是 Konva.js, 由于其性能不佳, 遂使用 Pixi.js,
+				编辑器性能得到大幅提升. 然而 Pixi.js 大多用于游戏开发, 因此编辑器的编辑能力受限制,
+				比如无法绘制环扇形, 文字段落无法应用多个样式等, 遂决定自行研发. 该自研引擎基于原生 canvas,
+				维护一套类似 Dom 树的渲染树, 能实现事件的捕获与冒泡传递.
+				使用了脏矩形检测、分片渲染、离屏渲染等多种绘制优化手段.
+			</p>
+			<p class="lip pl-20 maker2 lh-26 mb-10">
+				状态管理工具: Immui.js + Signal.js, 受 Immer 和 MobX 的启发, 由本人独自开发,
+				用于管理编辑器内的状态. Immui.js 是一个 Immutable 库, 自研目的在于更高效的性能优化.
+				Signal.js 基于发布订阅模式, 其优势是更加细粒度的控制, 例如可自定义回调函数的触发顺序等.
+			</p>
+			<p class="lip pl-20 maker2 lh-26 mb-10">
+				碰撞检测: 编辑器点击和框选依赖于图形的碰撞检测, 本人根据 Pixi.js
+				碰撞检测部分的源码重新设计了一套有向包围盒, 轴对齐包围盒, 任意曲线,
+				以及任意不规则图形的碰撞算法.
+			</p>
+			<p class="lip mb-10 lh-26">本编辑器其他部分大致介绍, 如下:</p>
+
+			<p class="lip pl-20 maker2 lh-22 mb-10">
+				本编辑器基于自研的 Immui.js, 根据每次操作得到 json patch 差异, 实现撤消重做功能,
+				以及在线保存功能.
+			</p>
+			<p class="lip pl-20 maker2 lh-22 mb-10">
+				本编辑器基于 Github 某开源 canvas 库的文字处理部分, 实现了文字分行, 点选等功能.
+			</p>
+			<!-- <p class="lip pl-20 maker2 lh-22 mb-10">
+				本编辑器的 Schema 设计源于前司即时设计编辑器, 并在其基础上进行了一些修改,
+				使得更加契合本编辑器.
+			</p> -->
+			<p class="lip pl-20 maker2 lh-22 mb-10">
+				本编辑器可导入并解析 svg, 该功能目前仅支持导入简单 svg(比如 icon), 编辑功能尚不完善.
+			</p>
+			<div class="mb-10" style="margin-top: 10px">
+				<span class="green f-16">北京即时设计有限公司</span>
+				<span style="width: 10px; display: inline-block"></span>2022.6 ~ 2023.2
+			</div>
+			<div class="mb-10">即时设计是一家对标 Figma 的在线设计公司, 本人在该公司的主要职责是:</div>
+			<p class="lip mb-10 lh-26">
+				为主编辑器制作众多插件, 插件目前总使用人数 20000+. 插件均为一个独立的前端项目,
+				用于扩展主编辑器的功能. 其技术栈均为 React + MobX + TS, 然后额外加上 Three.js, WebGL, Canvas
+				等技术. 例如:
+			</p>
+			<p class="lip pl-20 maker2 lh-26 mb-10">
+				弥散渐变 (<a
+					href="https://js.design/community?category=detail&type=plugin&id=62da9a940d00a077eaf5b156"
+					>https://js.design/...</a
+				>): 该插件为 Figma 同类插件的竞品. 以 Three.js 为基础技术,
+				使用者通过拖拽操作点即可生成各种渐变色图片. 制作前通过调研发现 Figma 同款插件有两大不足:
+				随机生成的图片不美观、无撤消重做. 本人制作该插件时通过: 研究有关颜色 RGB
+				方面的知识使随机生成的图片也较为美观; 额外加入了撤消重做的逻辑提升用户体验.
+			</p>
+			<p class="lip pl-20 maker2 lh-26 mb-10">
+				图像滤镜 (<a
+					href="https://js.design/community?category=detail&type=plugin&id=62f104cddf19a53f13a2efb6"
+					>https://js.design/...</a
+				>): 该插件也是 Figma 同类插件的竞品, 以 Canvas 为基础技术,
+				可以对图片进行各种扭曲、高斯模糊等操作, 类似于 PS. 本人制作该插件时,
+				也额外添加了竞品所没有的撤消重做功能, 从而提升用户体验.
+			</p>
+			<p class="lip lh-26 mb-10">
+				Axure 导入: Axure 文件格式是 Html 和 Css, 转换时需通过 getComputedStyle
+				获取各部分的样式位置信息, 然后提取相似元素映射为即时设计内的各种图形, 再构建出 json 结构,
+				从而完成转换
+			</p>
+			<!-- <p class="lip pl-20 maker2 lh-26 mb-10">
+				Sketch 导入: 一般的转换情形, 即不同字段与不同嵌套的json 格式转为主编辑器所特有的 json 格式
+			</p> -->
+			<!-- <div class="mb-10">
+				<span class="green f-16">腾讯科技有限公司(实习)</span> (2021.7 ~ 2021.10)
+			</div>
+			<div class="mb-10">
+				本人在实习期间也是参与了一款低代码编辑器的搭建, 并参与了本编辑器的 schema 的设计
+			</div> -->
+		</div>
+		<!-- <div class="block">
+			<div class="title">掌握技能</div>
+			<div>
+				<p class="lip lh-22 mb-10">熟练掌握HTML, CSS, JavasScript的使用</p>
+				<p class="lip lh-22 mb-10">熟练运用 React, Vue3, Webpack 等技术栈</p>
+				<p class="lip lh-22 mb-10">掌握一些基本数据结构与算法</p>
+				<p class="lip lh-22 mb-10">了解浏览器运行原理</p>
+			</div>
+		</div> -->
+		<div class="block">
+			<div class="title">其他介绍</div>
+			<div class="mb-10">
+				<div class="mb-10">本人有众多不同类型的玩具项目, 例如:</div>
+				<p class="lip lh-22 mb-10">
+					汉简编译器: 该编译器可将中文编程语言转换为 js, 并以 with + new Function 方式执行.
+				</p>
+				<p class="lip pl-20 maker2 lh-26 mb-10">
+					在线演示:
+					<a href="https://gitborlando.github.io/hanscript-ide/"
+						>https://gitborlando.github.io/...</a
+					>
+					<span style="width: 10px; display: inline-block"></span>
+					Github 地址:
+					<a href="https://github.com/gitborlando/hanscript">https://github.com/gitborlando/...</a>
+				</p>
+
+				<p class="lip lh-22 mb-10">
+					vue2 可视化双端对比算法: 该项目将 vue2 的 diff 算法以动画形式展示出来.
+				</p>
+				<p class="lip pl-20 maker2 lh-26">
+					在线演示:
+					<a href="https://gitborlando.github.io/double-end-diff-visual/"
+						>https://gitborlando.github.io/...</a
+					>
+					<span style="width: 10px; display: inline-block"></span>
+					Github 地址:
+					<a href="https://github.com/gitborlando/double-end-diff-visual"
+						>https://github.com/gitborlando/...</a
+					>
+				</p>
+				<!-- <p class="lip pl-20 maker2 lh-26 mb-10">
+					Github 地址:
+					<a href="https://github.com/gitborlando/double-end-diff-visual"
+						>https://github.com/gitborlando/...</a
+					>
+				</p> -->
+			</div>
+		</div>
+	</body>
+	<script>
+		;[...document.querySelectorAll('.lip')].forEach((i) => {
+			const div = document.createElement('div')
+			div.className = 'li'
+			const maker = document.createElement('div')
+			maker.className = 'maker'
+			maker.innerText = '•'
+			i.parentElement.insertBefore(div, i)
+			div.appendChild(i)
+			div.insertBefore(maker, i)
+			if (i.classList.contains('maker2')) {
+				i.classList.remove('maker2')
+				maker.classList.add('maker2')
+			}
+			if (i.classList.contains('pl-20')) {
+				i.classList.remove('pl-20')
+				div.classList.add('pl-20')
+			}
+		})
+	</script>
+</html>
