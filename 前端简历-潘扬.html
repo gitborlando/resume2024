@@ -56,7 +56,7 @@
 				渲染引擎: 本编辑器的渲染库经过多次迭代, 初始是 Konva.js, 由于其性能不佳, 遂使用 Pixi.js,
 				编辑器性能得到大幅提升. 然而 Pixi.js 大多用于游戏开发, 因此编辑器的编辑能力受限制,
 				比如无法绘制环扇形, 文字段落无法应用多个样式等, 遂决定自行研发. 该自研引擎基于原生 canvas,
-				维护一套类似 Dom 树的渲染树, 能实现事件的捕获与冒泡传递.
+				维护一套类似 dom 树的渲染树, 能实现事件的捕获与冒泡传递.
 				使用了脏矩形检测、分片渲染、离屏渲染等多种绘制优化手段.
 			</p>
 			<p class="lip pl-20 maker2 lh-26 mb-10">
@@ -93,7 +93,7 @@
 			<div class="mb-10">即时设计是一家对标 Figma 的在线设计公司, 本人在该公司的主要职责是:</div>
 			<p class="lip mb-10 lh-26">
 				为主编辑器制作众多插件, 插件目前总使用人数 20000+. 插件均为一个独立的前端项目,
-				用于扩展主编辑器的功能. 其技术栈均为 React + TS, 然后额外加上 Three.js, Canvas 等技术. 例如:
+				用于扩展主编辑器的功能. 其技术栈均为 React + TS, 然后额外加上 Three.js, canvas 等技术. 例如:
 			</p>
 			<p class="lip pl-20 maker2 lh-26 mb-10">
 				弥散渐变 (<a
@@ -108,14 +108,13 @@
 				图像滤镜 (<a
 					href="https://js.design/community?category=detail&type=plugin&id=62f104cddf19a53f13a2efb6"
 					>https://js.design/...</a
-				>): 该插件也是 Figma 同类插件的竞品, 以 Canvas 为基础技术,
+				>): 该插件也是 Figma 同类插件的竞品, 以 canvas 为基础技术,
 				可以对图片进行各种扭曲、高斯模糊等操作, 类似于 PS. 本人制作该插件时,
 				也额外添加了竞品所没有的撤消重做功能, 从而提升用户体验.
 			</p>
 			<p class="lip lh-26 mb-10">
-				Axure 导入: Axure 文件格式是 Html 和 Css, 转换时需通过 getComputedStyle
-				获取各部分的样式位置信息, 然后提取相似元素映射为即时设计内的各种图形, 再构建出 json 结构,
-				从而完成转换
+				Axure 导入: Axure 文件格式是 html, 转换时需通过 getComputedStyle 获取各部分的样式位置信息,
+				然后提取相似元素映射为即时设计内的各种图形, 再构建出 json 结构, 从而完成转换
 			</p>
 			<!-- <p class="lip pl-20 maker2 lh-26 mb-10">
 				Sketch 导入: 一般的转换情形, 即不同字段与不同嵌套的json 格式转为主编辑器所特有的 json 格式
@@ -156,9 +155,9 @@
 				</p> -->
 
 				<p class="lip lh-22 mb-10">
-					vue2 可视化双端对比算法(<a href="https://gitborlando.github.io/double-end-diff-visual/"
+					Vue2 可视化双端对比算法(<a href="https://gitborlando.github.io/double-end-diff-visual/"
 						>https://gitborlando...</a
-					>): 该项目将 vue2 的 diff 算法以动画形式展示出来.
+					>): 该项目将 Vue2 的 diff 算法以动画形式展示出来.
 				</p>
 				<!-- <p class="lip pl-20 maker2 lh-26">
 					在线演示:
