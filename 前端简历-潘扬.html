@@ -20,7 +20,7 @@
 				<div class="w-50">
 					<div class="flex mb-10">
 						<div class="w-60 gray">院校:</div>
-						<div>江西财经大学(金融学类)</div>
+						<div>江西财经大学</div>
 					</div>
 
 					<div class="flex mb-10">
@@ -39,15 +39,17 @@
 			<div class="mb-10 lh-26">
 				Young 编辑器是一个类似 Figma(行业标杆) 的可视化编辑软件, 由本人独立制作,
 				可编辑矢量图形、图片、文字等. 本编辑器致力于高性能编辑, 以下是其与 Figma 部分性能对比:
-				<a target="_blank" href="https://v.douyin.com/iMj7hPya/">https://v.douyin.com/iMj7hPya/</a>
+				<a class="green" target="_blank" href="https://v.douyin.com/iMj7hPya/"
+					>https://v.douyin.com/iMj7hPya/</a
+				>
 			</div>
 			<div class="mb-10 lh-26">
 				在线体验地址:
-				<a target="_blank" href="https://gitborlando.github.io/editor/#test-file-2"
+				<a class="green" target="_blank" href="https://gitborlando.github.io/editor/#test-file-2"
 					>https://gitborlando.github.io/...</a
 				>
 				<span style="width: 10px; display: inline-block"></span> Github 地址:
-				<a target="_blank" href="https://github.com/gitborlando/editor"
+				<a class="green" target="_blank" href="https://github.com/gitborlando/editor"
 					>https://github.com/gitborlando/editor</a
 				>
 			</div>
@@ -55,8 +57,8 @@
 			<p class="lip pl-20 maker2 lh-26 mb-10">
 				渲染引擎: 本编辑器的渲染库经过多次迭代, 初始是 Konva.js, 由于其性能不佳, 遂使用 Pixi.js,
 				编辑器性能得到大幅提升. 然而 Pixi.js 大多用于游戏开发, 因此编辑器的编辑能力受限制,
-				比如无法绘制环扇形, 文字段落无法应用多个样式等, 遂决定自行研发. 该自研引擎基于原生 canvas,
-				维护一套类似 dom 树的渲染树, 能实现事件的捕获与冒泡传递.
+				比如无法绘制环扇形, 文字段落无法应用多个样式等, 遂决定自行研发. 该自研引擎基于原生
+				<span class="hl">Canvas</span>, 维护一套类似 dom 树的渲染树, 能实现事件的捕获与冒泡传递.
 				使用了脏矩形检测、分片渲染、离屏渲染等多种绘制优化手段.
 			</p>
 			<p class="lip pl-20 maker2 lh-26 mb-10">
@@ -66,20 +68,20 @@
 				其优势是更加细粒度的控制, 例如可自定义回调函数的触发顺序等.
 			</p>
 			<p class="lip pl-20 maker2 lh-26 mb-10">
-				碰撞检测: 编辑器点击和框选依赖于图形的碰撞检测, 本人参考 Pixi.js
+				碰撞检测: 编辑器点击和框选依赖于 <span class="hl">图形学</span> 碰撞检测, 本人参考 Pixi.js
 				部分源码重新设计了一套有向包围盒, 轴对齐包围盒, 任意曲线, 以及任意不规则图形的碰撞算法.
 			</p>
 			<p class="lip mb-10 lh-26">本编辑器其他部分大致介绍, 如下:</p>
 			<p class="lip pl-20 maker2 lh-22 mb-10">
-				本编辑器可导入并解析 svg, 该功能基于本人在前司导入 Axure 的经验所实现, 由于个人开发精力受限,
-				目前仅支持导入简单 svg(比如 icon), 编辑功能尚不完善.
+				本编辑器可导入并解析 <span class="hl">Svg</span>, 该功能基于本人在前司导入 Axure
+				的经验所实现, 由于个人开发精力受限, 目前仅支持导入简单 Svg(比如 icon), 编辑功能尚不完善.
 			</p>
 			<p class="lip pl-20 maker2 lh-22 mb-10">
 				本编辑器基于自研的 Immui.js, 根据每次操作得到 json patch 差异,
 				实现撤消重做功能以及在线保存功能, 并且实现效果已比较完善.
 			</p>
 			<p class="lip pl-20 maker2 lh-22 mb-10">
-				本编辑器基于 Github 某开源 canvas 库的文字处理部分, 实现了文字分行, 点选等功能.
+				本编辑器基于 Github 某开源 Canvas 库的文字处理部分, 实现了文字分行, 点选等功能.
 			</p>
 			<!-- <p class="lip pl-20 maker2 lh-22 mb-10">
 				本编辑器的 Schema 设计源于前司即时设计编辑器, 并在其基础上进行了一些修改,
@@ -92,13 +94,13 @@
 			<div class="mb-10">即时设计是一家对标 Figma 的在线设计公司, 本人在该公司的主要职责是:</div>
 			<p class="lip mb-10 lh-26">
 				为主编辑器制作众多插件, 插件目前总使用人数 20000+. 插件均为一个独立的前端项目,
-				用于扩展主编辑器的功能. 其技术栈均为 React + TS, 然后额外加上 Three.js, canvas 等技术. 例如:
+				用于扩展主编辑器的功能. 其技术栈均为 React + TS, 然后额外加上 Three.js, WebGL 等技术. 例如:
 			</p>
 			<p class="lip pl-20 maker2 lh-26 mb-10">
 				弥散渐变 (<a
 					href="https://js.design/community?category=detail&type=plugin&id=62da9a940d00a077eaf5b156"
 					>https://js.design/...</a
-				>): 该插件为 Figma 同类插件的竞品. 以 Three.js 为基础技术,
+				>): 该插件为 Figma 同类插件的竞品. 以 <span class="hl">Three.js</span> 为基础技术,
 				使用者通过拖拽操作点即可生成各种渐变色图片. 制作前通过调研发现 Figma 同款插件有两大不足:
 				随机生成的图片不美观、无撤消重做. 本人制作该插件时通过: 研究有关颜色 RGB
 				方面的知识使随机生成的图片也较为美观; 额外加入了撤消重做的逻辑提升用户体验.
@@ -107,7 +109,7 @@
 				图像滤镜 (<a
 					href="https://js.design/community?category=detail&type=plugin&id=62f104cddf19a53f13a2efb6"
 					>https://js.design/...</a
-				>): 该插件也是 Figma 同类插件的竞品, 以 canvas 为基础技术,
+				>): 该插件也是 Figma 同类插件的竞品, 以 <span class="hl">WebGL</span> 为基础技术,
 				可以对图片进行各种扭曲、高斯模糊等操作, 类似于 PS. 本人制作该插件时,
 				也额外添加了竞品所没有的撤消重做功能, 从而提升用户体验.
 			</p>
